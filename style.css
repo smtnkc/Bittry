@@ -1,0 +1,104 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+body { 
+	background-color:#02151C; 
+}
+
+div#main {
+	width: 380px;
+	margin: 50px auto 0px;
+	padding: 20px 30px 30px;
+	border-radius: 5px;
+	border: 1px solid;
+	background: #F5F5F5;
+}
+
+section#rates { 
+	margin-bottom: 30px;
+}
+
+section#disclaimer {
+	margin: 0 auto;
+	color: #011015; 
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+}
+
+section#disclaimer > h4 {
+	font-size: 0.8em;
+}
+
+section#disclaimer > p {
+	font-size: 0.8em;
+	text-align: justify;
+}
+
+section#disclaimer > p > a {
+	text-decoration: none;
+	font-weight: 400;
+	color: #2B7563;
+}
+
+table { 
+	
+}
+
+td { 
+	border: none; 
+	vertical-align: middle;
+}
+
+span {
+	color: #011015;
+}
+
+span.info { 
+	margin-left: 35px; 
+	font-size: 80px;
+	line-height: 90px;
+	font-family: 'Inconsolata', monospace;
+}
+
+span.btn { 
+	font-size: 30px;
+	padding: 5px 0px;
+	display: block;
+	text-align: center;
+	width: 125px;
+	border-radius: 3px;
+	cursor:pointer;
+	font-family: 'Oswald', sans-serif;
+	margin-left: -2px;
+}
+
+span.disab { 
+	background: #929292; 
+}
+
+span.enab { 
+	background: #2B7563; 
+}
+
+@media screen and (max-width: 560px) {
+
+	div#main {
+	    width: 75%;
+    	margin: 10px auto;
+    	padding: 20px 10% 30px;
+	}
+
+	span.info {
+		font-size: 55px;
+		margin-left: 20px;
+		line-height: 60px;
+	}
+
+	span.btn {
+		font-size: 20px;
+		width: 80px;
+	}
+}

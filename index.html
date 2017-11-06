@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>Loading...</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="main">
+		<section id="rates">
+			<table>
+				<tr>
+					<td>
+						<span id="btn1" class="btn disab">USD/TRY</span>
+					</td>
+					<td>
+						<span class="info" id="info1">0.00</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="btn2" class="btn disab">BTC/USD</span>
+					</td>
+					<td>
+						<span class="info" id="info2">0.00</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span id="btn3" class="btn enab">BTC/TRY</span>
+					</td>		
+					<td>
+						<span class="info" id="info3">0.00</span>
+					</td>
+				</tr>
+			</table>
+		</section>
+		<section id="disclaimer">
+			<h4>Disclaimer:</h4>
+			<p>You can click to related pair of exchange to display in page title. The rates are retrieved through <a href="https://currencylayer.com" target="_blank">currencylayer</a> and <a href="https://bitfinex.readme.io/docs" target="_blank">Bitfinex</a> APIs. This site is for illustrative purposes only. No guarantee is made for the accuracy of the data provided. It is in your responsibility to make any decisions.</p>
+		</section>
+	</div>
+</body>
+<script type="text/javascript" src="bittry.js"></script>
+</html>
