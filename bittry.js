@@ -7,11 +7,11 @@ var ICON_TRY = "&#8378;";
 var URL = "http://apilayer.net/api/live?access_key=";
 var KEY = "YOUR_ACCESS_KEY"; // Available at https://currencylayer.com/documentation
 var existingResult;
-var i;
+var requestCounter;
 
 $(document).ready(function () 
 {
-	i = 1;
+	requestCounter = 1;
 	getBtcTry();
 });
 
@@ -29,7 +29,7 @@ $(".disab, .enab").click(function()
 
 function getUsdTry() 
 {
-	if(i == 1) {
+	if(requestCounter == 1) {
 		//console.log("Generate new USD/TRY rate.");
 		return $.getJSON(URL + KEY + "&currencies=TRY", function(result) {
 			existingResult = result;
@@ -49,7 +49,7 @@ function getBtcUsd()
 
 function getBtcTry() 
 {
-	if(i > ((30*MIN)/(10*SEC))) i=1;
+	if(requestCounter > ((30*MIN)/(10*SEC))) requestCounter=1;
 
 	getUsdTry().then(function(result1) {
 		var usdTry = parseFloat(result1.quotes.USDTRY).toFixed(3);
