@@ -80,7 +80,7 @@ function getBtcTry()
 		});
 	});
 
-	i++;
+	requestCounter++;
 	setTimeout(getBtcTry, 5*SEC);
 }
 
